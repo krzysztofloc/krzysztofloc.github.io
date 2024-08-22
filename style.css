@@ -1,0 +1,399 @@
+body,
+html {
+  height: 100%;
+}
+
+html {
+  background-color: #FAF3E0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+  color: #6D4C41;
+}
+
+.parallax {
+  background-image: url('/images/pasiekaLato.jpg');
+  height: 100%;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.spantext {
+  font-style: italic;
+
+}
+
+.spantext img {
+  display: inline-block;
+  height: 3em;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #6D4C41;
+  z-index: 1000;
+  height: 60px;
+  /* Height of the navbar */
+}
+
+li {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* Ensure li elements take full height of the navbar */
+}
+
+li a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* Ensure the link fills the li height */
+  width: 100%;
+  /* Ensure the link fills the li width */
+  padding: 0 15px;
+  /* Adjust as needed */
+}
+
+.right-aligned {
+  display: flex;
+  margin-left: auto;
+  height: 100%;
+  padding: 0 15px;
+
+}
+
+li a:hover {
+  background-color: #FFC107;
+  /* Apply background color on hover */
+}
+
+
+.panel2{
+  background: linear-gradient(135deg, #FFC107, #FFECB3);
+  border: 5px solid;
+  max-width: 800px;
+  padding: 20px;
+  font-size: 1.2em;
+  color: #6D4C41;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+#cennik {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px; /* Adds padding on sides */
+}
+
+.panel2 {
+  max-width: 800px; 
+  width: 100%;
+  background: linear-gradient(135deg, #FFC107, #FFECB3);
+  border:none;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.text h2 {
+  margin-bottom: 30px;
+  font-size: 2em; /* Larger font size for headings */
+  color: #6D4C41;
+}
+
+.text h2 i {
+  color: #FF8F00;
+  margin-right: 10px;
+}
+
+.price-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price-item {
+  background: #FAF3E0;
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+
+.price-item h4 {
+  margin: 0 0 10px;
+  color: #6D4C41;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.price-item h4 i {
+  color: #FF8F00;
+  margin-right: 10px;
+}
+
+.price-item p {
+  margin: 5px 0;
+  color: #6D4C41;
+  font-size: 1em;
+}
+
+.note {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #6D4C41;
+}
+
+
+
+
+.panel {
+  border: 5px solid;
+  border-color: #D1C4B0;
+  max-width: 800px;
+  padding: 20px;
+  font-size: 1.2em;
+  color: #6D4C41;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.collapsible {
+  background-color: #D1C4B0;
+  color: #6D4C41;
+  cursor: pointer;
+  padding: 18px;
+  border: none;
+  text-align: center;
+  outline: none;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.collapsible:hover {
+  background-color: #6D4C41;
+  color: white;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.collapsible.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #F8F5F0;
+  transition: max-height 0.2s ease-out;
+}
+
+
+section img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+section img:first-of-type {
+  padding-top: 0;
+}
+
+.w3-row-padding img {
+  width: 100%;
+}
+
+.w3-row-padding .w3-col:nth-child(even) img {
+  padding-top: 25%;
+}
+
+
+
+@media (max-width: 768px) {
+  ul li:not(:first-child) {
+    display: none;
+  }
+
+  ul .right-aligned li:not(:first-child) {
+    display: none;
+  }
+
+  ul {
+    justify-content: flex-start;
+  }
+
+  li a {
+    padding: 0px;
+  }
+
+
+  .panel {
+    padding: 10px;
+  }
+
+  .collapsible {
+    padding: 15px;
+  }
+
+  .w3-row-padding img {
+    padding-top: 10%;
+  }
+
+  .w3-row-padding .w3-col:nth-child(even) img {
+    padding-top: 10%;
+  }
+
+}
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box
+}
+
+.mySlides1,
+.mySlides2 {
+  display: none
+}
+
+.mySlides1 img,
+.mySlides2 img {
+  vertical-align: middle;
+  width: 100%
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a grey background color */
+.prev:hover,
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+
+footer {
+  background-color: #6D4C41;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  max-width: 50px;
+  height: auto;
+  margin-right: 20px; 
+}
+
+.footer-contact p {
+  margin: 5px 0;
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-logo {
+      margin-bottom: 20px;
+  }
+}
